@@ -1,0 +1,118 @@
+
+/* .title {
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .title {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1rem;
+    }
+
+} */
+
+/* <Exercitiul 2> */
+
+/* .bg-img {
+    height:50vh;
+    display: grid;
+    align-content: center;
+    background-image: url('https://www.theclickcommunity.com/blog/wp-content/uploads/2016/12/Anda-Panciuk-AndaP.jpg');
+    color: white;
+} */
+
+/* <Exercitiul 3> */
+
+body {
+    margin: 0;
+    }
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'sidebar content content'
+    'footer footer footer';
+    grid-template-rows: 100px calc(100vhd - 200px) 100px;
+    grid-template-columns: 200px calc(100vwd - 200px);
+    
+
+}
+ .pageHeader {
+    grid-area: header;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+    background-color: green;
+  
+    a {
+        text-decoration: none;
+        color: rgb(202, 110, 12);
+        font-weight: bold;
+    }
+ }
+ .navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ .pageSidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    background-color: chocolate;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    p {
+        margin: 0;
+    }
+ }
+
+ .pageContent {
+    grid-area: content;
+    text-align: center;
+ }
+
+ .main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+ }
+
+ .post {
+    width: 150px;
+
+ }
+
+ .pageFooter {
+    grid-area: footer;
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    
+    
+ }
+
+ 
